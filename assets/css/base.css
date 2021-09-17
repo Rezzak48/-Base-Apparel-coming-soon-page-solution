@@ -1,123 +1,116 @@
 /*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 :root {
   /*========== RENDER 1REM = 10PX =============*/
-  font-size: 62.5rem;
+  font-size: 62.5%;
 
-  --header-height: ;
+  --header-height: 3.2rem ;
 
   /*========== Colors ==========*/
-  /* work with color */
-  --hue-color: ;
 
-  /* HSL color mode */
-  --first-color: ;
-  --first-color-second: ;
-  --first-color-alt: ;
-  --first-color-lighter: ;
-  --title-color: ;
-  --text-color: ;
-  --text-color-light: ;
-  --input-color: ;
-  --body-color: ;
-  --container-color: ;
-
+  --title-color: hsl(0, 6%, 24%);
+  --text-color: hsl(0, 36%, 70%);
+  --error-color: hsl(0, 93%, 68%);
+  --body-color: white;
+  
+  /* ### Gradients */
+  
+  /* --Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+  --Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+  
   /*========== Font and typography ==========*/
-  --body-font: ;
+  --body-font : 'Josefin Sans';
+  
+  --h1-font-size: 4rem ;
+  --normal-font-size: 2.2rem;
 
-  --big-font-size: ;
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --normal-font-size: ;
-  --small-font-size: ;
-  --smaller-font-size: ;
+  --h1-line-hight: 4.4rem ;
+  --h1-letter-spacing: 1.08rem ;
+  --p-line-hight: 2.2rem ;
 
+  
   /*========== Font weight ==========*/
-  --font-medium: ;
-  --font-semi-bold: ;
+  --font-small: 300 ;
+  --font-medium: 400;
+  --font-semi-bold: 600 ;
 
-  /*========== Margenes Bottom ==========*/
-  --mb-0-25: ;
-  --mb-0-5: ;
+  /*========== Margins Bottom ==========*/
+  --mb-logo: 3.2rem ;
+  --mb-: ;
   --mb-0-75: ;
   --mb-1: ;
-  --mb-1-5: ;
+  --mb-sides: 1.6rem ;
   --mb-2: ;
   --mb-2-5: ;
   --mb-3: ;
 
-  /*========== z index ==========*/
-  --z-tooltip: ;
-  --z-fixed: ;
-  --z-modal: ;
 }
 
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: ;
-    --h1-font-size: ;
-    --h2-font-size: ;
-    --h3-font-size: ;
-    --normal-font-size: ;
-    --small-font-size: ;
-    --smaller-font-size: ;
+    --h1-font-size: 6.4rem; 
+    --normal-font-size:2.8rem ;
+
   }
 }
 
-/*========== Variables Dark theme ==========*/
-
-/*========== Button Dark/Light ==========*/
-
 /*==================== BASE ====================*/
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-/*==================== LAYOUT ====================*/
+html {
+  scroll-behavior: smooth;
+}
 
-/*==================== NAV ====================*/
+body {
+  margin: 0 0 var(--header-height) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
 
-/* show menu */
+h1 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
 
-/* Active link */
+ul {
+  list-style: none;
+}
 
-/* Change background header */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
-/*==================== HOME ====================*/
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-/*==================== BUTTONS ====================*/
+/*==================== RE-USABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
 
-/*==================== ABOUT ====================*/
+.container {
+  max-width: 75.8rem;
+  margin-left: var(--mb-sides);
+  margin-right: var(--mb-sides);
+}
 
-/*==================== SKILLS ====================*/
 
-/*==================== QUALIFICATION ====================*/
 
-/*==================== SERVICES ====================*/
 
-/* Active Modal */
 
-/*==================== PORTFOLIO ====================*/
 
-/*==================== PROJECT IN MIND ====================*/
 
-/*==================== TESTIMONIAL ====================*/
 
-/*==================== CONTACT ME ====================*/
-
-/*==================== FOOTER ====================*/
-
-/*========== SCROLL UP ==========*/
-
-/* Show scroll */
-
-/*========== SCROLL BAR ==========*/
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-/* For medium devices */
-
-/* For large devices */
